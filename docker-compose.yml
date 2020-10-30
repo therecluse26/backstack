@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: api.dockerfile
+  db:
+    image: rethinkdb:latest
+    ports:
+     - "28015"
+    volumes:
+     - ./data/mount:/data
+    command: rethinkdb --bind all --data /data 
