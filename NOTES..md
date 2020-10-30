@@ -59,4 +59,6 @@
 
 ## Application flow
 
-- State is stored 
+- State is stored locally
+
+- Most recent state change timestamp is always kept up to date
