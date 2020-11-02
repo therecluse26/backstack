@@ -34,8 +34,3 @@ Need a way to keep local application state (and schema) in sync with user stores
 - Full "fresh install" schema and data files should always be present, representing the current state of the app.
 
 - Partial migrations should also exist, starting form the beginning state and tracking changes and mutations over time for incremental updates.
-
-## API methods
-
-getState(key)
-setState(key, value)
